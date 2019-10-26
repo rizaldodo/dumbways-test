@@ -8,9 +8,9 @@ function generate(num){
             for(let k=0; k<4; k++){
                 let rand = Math.round(Math.random()*1)+1;
                 if(rand>1){
-                    temp+=huruf[Math.round(Math.random()*26)];
+                    temp+=huruf[Math.round(Math.random()*25)];
                 }else{
-                    temp+=(Math.floor((Math.random()*9)+1)).toString()
+                    temp+=(Math.round(1+(Math.random()*8))).toString()
                 }
 
                 // temp+='x'
