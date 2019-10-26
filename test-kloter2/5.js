@@ -10,7 +10,7 @@ function generate(num){
                 if(rand>1){
                     temp+=huruf[Math.round(Math.random()*26)];
                 }else{
-                    temp+=(Math.round(Math.random()*9)).toString()
+                    temp+=(Math.floor((Math.random()*9)+1)).toString()
                 }
 
                 // temp+='x'
