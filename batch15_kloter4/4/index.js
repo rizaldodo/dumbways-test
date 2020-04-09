@@ -55,7 +55,7 @@ app.post('/save',(req, res) => {
 });
 
 //route untuk update data
-app.render.post('/update',(req, res) => {
+app.post('/update',(req, res) => {
     let sql = "UPDATE post_tb SET post_title='"+req.body.post_title+"', post_content'"+req.body.post_content+"' WHERE post_id="+req.body.post_id;
     let query = conn.query(sql, (err, results) => {
         if(err) throw err;
